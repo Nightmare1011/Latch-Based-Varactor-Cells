@@ -7,4 +7,36 @@ You must have your own standard cell library.
 
 APR tool: innovus
 
-Process: TSMC 90 nm
+Simulator: vcs
+
+========================== Guide ==========================
+
+Command for RTL: 01_RTL
+
+-Simulation: $make sim / $make vcs
+
+-Remove files: $make clean
+
+Command for Gate_level: 02_Gate_level
+
+-Synthesis: $make syn
+
+-Simulation: $make sim
+
+-Remove files: $make clean
+
+Command for APR: 03_APR
+
+-Move to "run" directory: $cd run
+
+-Run innovus: $innovus 
+
+-Run APR script: innovus1> source ../scripts/top_soce.tcl
+
+-Move to "post_sim": cd ../post_sim
+
+-Simulation: $make sim 
+
+-Remove files: $make clean
+
+=========================== Done ===========================
