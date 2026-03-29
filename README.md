@@ -4,3 +4,6 @@ A Latch-Based Varactor Cell (LBVC) is a circuit that can provide Time Delay Line
 You must have your own standard cell library.
 
 *** This circuit must be operated under VCS-XA; otherwise, its signal will be unknown. ***
+
+APR tool: innovus
+Process: TSMC 90 nm
